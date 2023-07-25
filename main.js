@@ -43,7 +43,7 @@ function preload() {
 
 function setup() {
   createCanvas(game_size[0], game_size[1]);
-  frameRate(45);
+  frameRate(30);
   ground_level = game_size[1] - BASE.height;
 }
 
