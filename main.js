@@ -61,7 +61,7 @@ function play() {
   if (pipe[0] < -TOP_PIPE.width) {
     pipe[0] = game_size[0];
     pipe[1] = random(100, game_size[1] - 250 - pipe_gap);
-    pipe_gap = 100 + random(100);
+    pipe_gap = 120 + random(80);
     points += 1;
 
     POINT.play();
@@ -91,7 +91,7 @@ function play() {
 
     bird = [50, game_size[1] / 2];
 
-    pipe_gap = 100 + random(100);
+    pipe_gap = 120 + random(80);
     lives -= 1;
     if (lives < 0) {
       game_running = false;
@@ -128,7 +128,7 @@ function play() {
   ) {
     pipe[0] = game_size[0];
     pipe[1] = 50 + random(game_size[1] - 250 - pipe_gap);
-    pipe_gap = 100 + random(100);
+    pipe_gap = 120 + random(80);
     lives -= 1;
     if (lives < 0) {
       game_running = false;
