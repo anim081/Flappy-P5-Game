@@ -2,13 +2,13 @@ let game_size = [288, 512];
 let game_running = false;
 let ground_level;
 let pipe = [500, 100];
-let pipe_gap = 80;
+let pipe_gap = 100;
 let pipe_speed = 10;
 let bird = [90, game_size[1] / 2];
 let jump = 0;
 let lives = 5;
 let points = 0;
-let bestScore = 0; // Add a variable to store the best score
+let bestScore = 0;
 let BACKGROUND, BASE, BOTTOM_PIPE, TOP_PIPE, BIRD, GAMEOVER, MESSAGE;
 let DIE, HIT, WING;
 
