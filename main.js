@@ -182,8 +182,19 @@ function draw() {
 
     if (mouseIsPressed) {
       game_running = true;
-      lives = 4; // reset lives to 5, it says 4 but its actually 5 lives
+      lives = 4; // reset lives to 5, it says 4 but it's actually 5 lives
       points = 0;
+    }
+  } else {
+    // bird look down when not jumping
+    if (jump < 0) {
+      push();
+      translate(bird[0] + BIRD.width / 2, bird[1] + BIRD.height / 2);
+      rotate(PI / 6); // rotating the brid
+      image(BIRD, -BIRD.width / 2, -BIRD.height / 2);
+      pop();
+    } else {
+      image(BIRD, bird[0], bird[1]); // reset the bird back to original position
     }
   }
 }
